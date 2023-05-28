@@ -1,6 +1,16 @@
 # IntuitiveCare-ProcessoSeletivo
 
-As aplicações e serviços desenvolvidos utilizando python possuem arquivo um arquivo de requiremento em suas respectivas pastas. <br />
+
+Nesse repositório é possível encontrar:
+Markup : * Scripts em python relativos ao teste 1 e 2 
+         * Código fonte de um aplicação Web referente ao teste 4
+         * Código fonte do servidor de API referente ao teste 4
+         * Coleção de teste de API referente ao teste 4 
+         * Scripts para tratamento dos dados do banco de dados referentes ao teste 4
+         * Arquivos e lista de requerimentos para os arquivos python
+
+endereço da aplicação web: http://ec2-18-117-185-41.us-east-2.compute.amazonaws.com/   <br />
+
 
 # Teste 1 
 ```
