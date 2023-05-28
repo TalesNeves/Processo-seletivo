@@ -1,16 +1,19 @@
 <template>
    <div>
-    <div class="card">
-       <input placeholder="Razão Social" v-model="data.lookforterm" type="text" class="form-control"/>
-       <button @click="getByRazao" type="button" class="btn btn-primary">Procurar</button>
+    <div class="card withpadding">
+       <input style="background-color: #fffdd1;" placeholder="Razão Social" v-model="data.lookforterm" type="text" class="form-control"/>
+       <div class="withpadding">
+
+         <button @click="getByRazao" type="button" class="btn btn-primary">Procurar</button>
+       </div>
       <div class="card-header">
         <h4>
           Operadoras
 
         </h4>
       </div>
-      <div class="table-responsive card-body">
-        <table class="table table-hover table-bordered">
+      <div class="absolute table-responsive card-body">
+        <table style="table-layout: fixed;" class="table-hover table-striped table-bordered">
           <thead>
            <tr>
         <th>reg_ans</th>
@@ -36,26 +39,26 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="(operadora,index) in this.data.operadoras" :key="index">
-        <td>{{operadora.reg_ans}}</td>
-        <td>{{operadora.cnpj}}</td>
-        <td>{{operadora.razao_social}}</td>
-        <td>{{operadora.nome_fantasia }}</td>
-        <td>{{operadora.modalidade}}</td>
-        <td>{{operadora.logradouro}}</td>
-        <td>{{operadora.numero}}</td>
-        <td>{{operadora.complemento}}</td>
-        <td>{{operadora.bairro}}</td>
-        <td>{{operadora.cidade}}</td>
-        <td>{{operadora.uf}}</td>
-        <td>{{operadora.cep}}</td>
-        <td>{{operadora.ddd}}</td>
-        <td>{{operadora.telefone}}</td>
-        <td>{{operadora.fax}}</td>
-        <td>{{operadora.email}}</td>
-        <td>{{operadora.representante}}</td>
-        <td>{{operadora.cargo_representant}}</td>
-        <td>{{operadora.data_registro_ans}}</td>
+            <tr  v-for="(operadora,index) in this.data.operadoras" :key="index">
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.reg_ans}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.razao_social}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.cnpj}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.nome_fantasia }}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.modalidade}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.logradouro}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.numero}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.complemento}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.bairro}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.cidade}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.uf}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.cep}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.ddd}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.telefone}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.fax}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.email}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.representante}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.cargo_representant}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.data_registro_ans}}</td>
             </tr>
           </tbody>
         </table>
@@ -100,6 +103,46 @@ export default{
 </script>
 
 <style>
+.withpadding {
+  padding: 5px
+}
+td {
+  border: 1px solid black;
+}
+.lastcell {
+  max-width: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /* transition: 0.1s; */
+}
+
+.lastcell:hover {
+  position: absolute;
+  background-color: yellow;
+  max-width: 1000px;
+  padding: 4px;
+}
+
+.lastrow:hover{
+  position: absolute;
+  background-color: yellow;
+  max-width: 1000px;
+  padding: 4px;
+}
+
+.lastrow:hover{
+  position: absolute;
+  background-color: yellow;
+  max-width: 1000px;
+  padding: 4px;
+}
+
+.col:hover {
+  flex-grow: 5;
+  transition: flex-grow .3s;
+  -webkit-transition: flex-grow .3s;
+}
 .table-responsive::-webkit-scrollbar {
     -webkit-appearance: none;
 }
@@ -125,6 +168,7 @@ export default{
 table {
         width: 100%;
     }
+
 
 /* tbody { display: flex; } */
 
