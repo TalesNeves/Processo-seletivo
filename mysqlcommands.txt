@@ -1,3 +1,3 @@
 LOAD DATA INFILE '/var/lib/mysql-files/4T2021.csv' INTO TABLE import FIELDS TERMINATED BY ';' IGNORE 1 ROWS;
-CREATE USER 'user_access'@'localhost' IDENTIFIED BY 'user_password';
+
 CREATE TABLE operadoras(reg varchar(35), cnpj varchar(35), razao varchar(35), nome varchar(35), modalidade varchar(35), logradouro varchar(35), numero varchar(35), complemento varchar(35), bairro varchar(35), cidade varchar(35), uf varchar(35), cep varchar(35), ddd varchar(35), telefone varchar(35), fax varchar(35), email varchar(35), representante varchar(35), cargo varchar(35), data varchar(35));
