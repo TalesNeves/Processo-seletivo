@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "8a9238d0-86de-444d-b9d8-0d24fdd437bd",
+		"name": "db",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27662395"
+	},
+	"item": [
+		{
+			"name": "all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-18-118-189-190.us-east-2.compute.amazonaws.com:5000/all",
+					"protocol": "http",
+					"host": [
+						"ec2-18-118-189-190",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "like",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-18-118-189-190.us-east-2.compute.amazonaws.com:5000/like/magistrados",
+					"protocol": "http",
+					"host": [
+						"ec2-18-118-189-190",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "5000",
+					"path": [
+						"like",
+						"magistrados"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
