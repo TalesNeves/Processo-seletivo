@@ -41,8 +41,8 @@
           <tbody>
             <tr  v-for="(operadora,index) in this.data.operadoras" :key="index">
         <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.reg_ans}}</td>
-        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.razao_social}}</td>
         <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.cnpj}}</td>
+        <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.razao_social}}</td>
         <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.nome_fantasia }}</td>
         <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.modalidade}}</td>
         <td class="lastcell" style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;"  >{{operadora.logradouro}}</td>

@@ -17,9 +17,6 @@ from flask_mysqldb import MySQL
 from flask_marshmallow import Marshmallow
 from flask_cors import CORS 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://admin:7Ds7wu!awA@database-1.caett5r5gzrn.us-east-2.rds.amazonaws.com/db"
-
-# app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:pass@localhost/database_schema"
 
 db = SQLAlchemy()
 db.init_app(app)
